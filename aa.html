@@ -2,7 +2,15 @@
 <html>
 <head>
 <style>
-body{margin:0px;}
+body{
+  margin:0px; 
+  background-color: #d3d3d3; 
+  font-family: Monaco, Courier New, monospace; 
+  font-size: 14px; 
+  color: black; 
+  text-align:center; 
+  text-decoration:none;}
+  
 ul {
   list-style-type: none; /* miče bullets */
   margin: 0; /*iz nekog razloga ima prostora oko navbara*/
@@ -66,11 +74,12 @@ li.dpdwn {
 .velslike{ /*da bez obzira na veličinu zaslona tekst bude u sredini.. kao veličina slike*/
   position: relative;
 }
-.sredina{
+.desno{
   position: absolute;
   top: 2%;
   left: 70%;
 }
+
 
 .sredina-txt{
   position: absolute;
@@ -113,11 +122,16 @@ color: black;
   text-decoration:none;
 
 }
+
+@media only screen and (max-width: 600px){
+  .sredina-txt{font-size:6.5px; top:80%; left:17.7%;}
+  .desno{top:100%; left:100%;}
+}
 </style>
 </head>
 
 
-<body style = "background-color: #d3d3d3; font-family: Monaco, Courier New, monospace; font-size: 14px; color: black; text-align:center; text-decoration:none;">
+<body>
 <ul>
   <li><a class= "trenutnastr"href="aa.html"><b>Home</b></a></li>
   <li class="dpdwn"> 
@@ -140,10 +154,8 @@ color: black;
 <h1>Yamaha - neslužbena stranica</h1>
 
 <div class="velslike">
-  <center><a href= "Yamaha.html"><img src= "XSR900.jpg" alt= "mjau" width= 70%></center></a> /*otvara slika veličine koje je spremljena*/  
-  <a href= "Yamaha.html"><div class= "sredina"><img src= "Yamahaaa.png" alt= "mjau" width= 170%></a></div></a>
+  <center><a href= "Yamaha.html"><img src= "XSR9000.jpg" alt= "mjau" width= 70%></center></a> /*otvara slika veličine koje je spremljena*/   
   <div class= "sredina-txt"><h1>Kliknite na sliku kako biste saznali sve o Yamahi</h1></div>
-</div>
 </body>
 
 </html>
