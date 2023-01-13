@@ -84,7 +84,7 @@ li.dpdwn {
 .sredina-txt{
   position: absolute;
   top: 88%;
-  left:22.7%;
+  left:20.2%;
   text-decoration: none;
   font-family: Monaco, Courier New, monospace; 
   font-size: 14px; 
@@ -124,9 +124,26 @@ color: black;
 
 }
 
-@media only screen and (max-width: 1500px){
+.poc-slika{
+width: 70%;
+}
+
+@media only screen and (max-width: 1375px){
   .sredina-txt{ 
-    display:none;}
+    position: relative;
+    top: 0%;
+    left: 0%;  
+    }
+}
+
+@media only screen and (max-width: 600px){
+  .sredina-txt{ 
+    display:none;
+}
+  .poc-slika{
+    width:100%;
+}
+
 }
 </style>
 </head>
@@ -155,8 +172,8 @@ color: black;
 <h1>Yamaha - neslužbena stranica</h1>
 
 <div class="velslike">
-  <center><a href= "Yamaha.html"><img src= "XSR9000.jpg" alt= "mjau" width= 70%></center></a>   
   <div class= "sredina-txt"><h1>Kliknite na sliku kako biste saznali sve o Yamahi</h1></div>
+  <center><a href= "Yamaha.html"><img class="poc-slika" src= "XSR9000.jpg" alt= "mjau"></center></a>   
 </div>
 </body>
 
